@@ -1,0 +1,23 @@
+#Start Postgres in Linux:
+
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+
+systemctl status postgresql
+
+sudo -u postgres <user>
+
+#create user with password: 
+sudo -u postgres createuser &lt;name&gt;
+CREATE ROLE admin WITH LOGIN SUPERUSER CREATEDB CREATEROLE PASSWORD 'Passw0rd';
+
+#create database postgress
+CREATE DATABASE name
+
+#create table in postgress
+CREATE TABLE [IF NOT EXISTS] table_name (
+   column1 datatype(length) column_contraint,
+   column2 datatype(length) column_contraint,
+   column3 datatype(length) column_contraint,
+   table_constraints
+);

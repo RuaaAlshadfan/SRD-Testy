@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subdomain Enumerator</title>
+       <style>
+        h1 {
+            color: blue;
+            font-family: sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subdomain Enumerator</h1>
+    <ol class="list-group">
+        {% for subdomain in subdomains %}
+            <li class="list-group-item">{{ subdomain }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
