@@ -1,2 +1,6 @@
 # SRD-Testy
-Pentation testing tool
+Penetration testing tool for Web Applications
+
+
+
+
